@@ -1,0 +1,9 @@
+/* CSS for SliderXBlock */
+
+.slider_block .count {
+    font-weight: bold;
+}
+
+.slider_block p {
+    cursor: pointer;
+}

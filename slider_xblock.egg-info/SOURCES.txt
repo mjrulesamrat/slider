@@ -1,0 +1,12 @@
+slider/__init__.py
+slider/slider.py
+slider/static/README.txt
+slider/static/css/slider.css
+slider/static/html/slider.html
+slider/static/js/src/slider.js
+slider_xblock.egg-info/PKG-INFO
+slider_xblock.egg-info/SOURCES.txt
+slider_xblock.egg-info/dependency_links.txt
+slider_xblock.egg-info/entry_points.txt
+slider_xblock.egg-info/requires.txt
+slider_xblock.egg-info/top_level.txt

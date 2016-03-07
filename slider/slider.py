@@ -11,13 +11,14 @@ from xblock.fragment import Fragment
 
 class SliderXBlock(XBlock):
     """
+    Updated by: Jay Modi
     TO-DO: document what your XBlock does.
     """
 
     # Fields are defined on the class.  You can access them in your code as
     # self.<fieldname>.
 
-    # TO-DO: delete count, and define your own fields.
+    # slider_name and slider_description added
     slider_name = String(
         default="Custom Slider XBlock", scope=Scope.settings,
         help="Slider Display name"
@@ -46,7 +47,6 @@ class SliderXBlock(XBlock):
         frag.initialize_js('SliderXBlock')
         return frag
 
-
     def studio_view(self, context=None):
         """
         The studio view
@@ -61,7 +61,6 @@ class SliderXBlock(XBlock):
         fragment.initialize_js('SliderXBlockStudio')
 
         return fragment
-
 
     # Added by Jay Modi
     @XBlock.json_handler

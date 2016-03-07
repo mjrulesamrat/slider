@@ -1,9 +1,9 @@
 /* Javascript for SliderXBlock. */
 function SliderXBlock(runtime, element) {
 
-    function updateCount(result) {
-        $('.count', element).text(result.count);
-    }
+//    function updateCount(result) {
+//        $('.count', element).text(result.count);
+//    }
 
 //    var handlerUrl = runtime.handlerUrl(element, 'increment_count');
 

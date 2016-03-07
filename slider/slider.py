@@ -57,7 +57,7 @@ class SliderXBlock(XBlock):
         # Load Studio View
         fragment.add_content(render_template('static/html/slider_edit.html', content))
         fragment.add_css(load_resource('static/css/slider_edit.css'))
-        fragment.add_javascript(unicode(render_template('static/js/slider_edit.js', content)))
+        fragment.add_javascript(unicode(render_template('static/js/src/slider_edit.js', content)))
         fragment.initialize_js('SliderXBlockStudio')
 
         return fragment

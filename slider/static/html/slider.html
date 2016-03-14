@@ -1,7 +1,33 @@
 <div class="slider_block">
     <p>
-        <span class='student_slider_name'>{self.slider_name}</span>
+        <span class='student_slider_name'>{{self.display_name}}</span>
         <hr>
-        <span class='student_slider_description'>{self.slider_description}</span>
+        <!--<span class='student_slider_description'>{slider_description}</span>-->
     </p>
+
+    <!--  Outer wrapper for presentation only, this can be anything you like -->
+    <div id="banner-slide">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+
+        <li><a href=""><img src="{{banner}}" title="Automatically generated caption"></a>
+        <p>Hello There</p>
+        </li>
+
+        <li><img src="/resource/slider/public/img/banner02.jpg" title="Automatically generated caption">
+        <p>Hello 222</p>
+        </li>
+
+        <li><img src="/resource/slider/public/img/banner03.jpg" title="Automatically generated caption">
+        <p>Hello 3333333</p>
+        </li>
+
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+    </div>
+    <!-- End outer wrapper -->
+
+
 </div>

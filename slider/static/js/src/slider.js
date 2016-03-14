@@ -17,6 +17,13 @@ function SliderXBlock(runtime, element) {
 //    });
 
     $(function ($) {
+          $('#banner-slide').bjqs({
+            animtype      : 'slide',
+            height        : 320,
+            width         : 620,
+            responsive    : true,
+            randomstart   : true
+          });
         /* Here's where you'd do things on page load. */
     });
 }

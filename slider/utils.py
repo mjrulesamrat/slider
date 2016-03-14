@@ -12,6 +12,9 @@ from django.template import Context, Template
 
 log = logging.getLogger(__name__)
 
+from xblockutils.resources import ResourceLoader
+loader = ResourceLoader(__name__)
+
 
 # Functions #########################################################
 

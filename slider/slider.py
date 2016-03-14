@@ -50,12 +50,18 @@ class SliderXBlock(XBlock):
 
         # print dir(self.runtime.local_resource_url(self, 'public/img/'))
 
-        banner_url = self.runtime.local_resource_url(self,
+        banner_url1 = self.runtime.local_resource_url(self,
                                                      'public/img/banner01.jpg')
+        banner_url2 = self.runtime.local_resource_url(self,
+                                                     'public/img/banner02.jpg')
+        banner_url3 = self.runtime.local_resource_url(self,
+                                                     'public/img/banner03.jpg')
 
         context = {
             'self': self,
-            'banner': banner_url,
+           'banner1': banner_url1,
+           'banner2': banner_url2,
+           'banner3': banner_url3,
         }
 
         frag = Fragment()
@@ -72,13 +78,19 @@ class SliderXBlock(XBlock):
         """
         The studio view
         """
-        banner_url = self.runtime.local_resource_url(self,
+        banner_url1 = self.runtime.local_resource_url(self,
                                                      'public/img/banner01.jpg')
+        banner_url2 = self.runtime.local_resource_url(self,
+                                                     'public/img/banner02.jpg')
+        banner_url3 = self.runtime.local_resource_url(self,
+                                                     'public/img/banner03.jpg')
 
         fragment = Fragment()
         content = {
             'self': self,
-           'banner': banner_url,
+           'banner1': banner_url1,
+           'banner2': banner_url2,
+           'banner3': banner_url3,
         }
         # Load Studio View
         fragment.add_content(render_template('static/html/slider_edit.html', content))
